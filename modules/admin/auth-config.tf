@@ -1,0 +1,1 @@
+# Since only one auth config provider can be configured at any one time this will be a single file for now
