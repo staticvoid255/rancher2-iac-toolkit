@@ -5,6 +5,7 @@ resource "rancher2_user" "foo" {
   password = "changeme"
   enabled = true
 }
+
 # Create a new rancher2 global_role_binding for User
 resource "rancher2_global_role_binding" "foo" {
   name = "foo"
