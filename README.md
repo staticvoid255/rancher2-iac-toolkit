@@ -1,0 +1,1 @@
+A Terraform toolkit to bootstrap a new Rancher installation for production-readiness as well as provide an in-code interface to manage users & roles, apps, clusters, namespaces and much more.

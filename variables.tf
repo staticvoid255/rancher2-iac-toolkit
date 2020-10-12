@@ -38,8 +38,18 @@ variable "rancher2_catalogs" {
 variable "rancher2_cloud_credentials" {
     type    = map
     default = {
-        aws {
-            "default" = {
+        aws = {
+            default = {
+                name = "foo",
+                description = "foo description",
+                amazonec2_credential_config {
+                        access_key = null
+                        secret_key = null
+                }
+            }
+        },
+        azure = {
+            default = {
                 name = "foo",
                 description = "foo description",
                 amazonec2_credential_config {
