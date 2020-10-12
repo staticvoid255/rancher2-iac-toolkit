@@ -20,5 +20,5 @@ provider "rancher2" {
 
 	api_url = rancher2_bootstrap.admin.url
 	token_key = rancher2_bootstrap.admin.token
-	insecure = true
+	insecure = true #consider implementing cert-based auth, either that or issue tokens from vault
 }
