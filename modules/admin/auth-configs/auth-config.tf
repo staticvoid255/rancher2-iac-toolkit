@@ -1,4 +1,4 @@
-# Since only one auth config provider can be configured at any one time this will be a single file for now
+# TODO: Break this up into individual files and put in own folder
 
 # Create a new rancher2 Auth Config ActiveDirectory
 resource "rancher2_auth_config_activedirectory" "activedirectory" {
