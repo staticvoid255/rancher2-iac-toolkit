@@ -16,9 +16,15 @@ provider "rancher2" {
 }
 
 provider "rancher2" {
-	alias = "admin"
+	
+	/*no alias required since admin is the default mode, but this is the reason you
+	will see this provider referenced as "rancher2.admin"
+	alias = "admin"*/
 
 	api_url = rancher2_bootstrap.admin.url
 	token_key = rancher2_bootstrap.admin.token
-	insecure = true #consider implementing cert-based auth, either that or issue tokens from vault
+	insecure = true # consider implementing cert-based auth, either that or issue tokens from vault
 }
+
+
+#### ADD EXTERNAL PROVIDERS BELOW ####
