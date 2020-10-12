@@ -1,5 +1,5 @@
 # Create a new rancher2 Project
-resource "rancher2_project" "foo" {
+resource "rancher2_project" "default" {
   name = "foo"
   cluster_id = "<CLUSTER_ID>"
   resource_quota {
